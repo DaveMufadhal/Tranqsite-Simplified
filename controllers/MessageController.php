@@ -35,7 +35,6 @@
                 } else {
                     $unique_file_name = $recipient_id . "_" . uniqid() . "_" . $file_name;
                     $uploaded_file_path = $upload_dir . $unique_file_name;
-                    var_dump($uploaded_file_path);
                     if (!move_uploaded_file($file_tmp_name, $uploaded_file_path)) {
                         $_SESSION['error'][] = "Failed to upload file.";
                         $has_error = true;
