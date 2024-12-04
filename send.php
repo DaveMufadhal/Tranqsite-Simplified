@@ -48,7 +48,7 @@
 
 <body class="hack dark">
     <div class="grid main-form">
-        <form class="form" method="POST" action="./controllers/MessageController.php">
+        <form class="form" method="POST" action="./controllers/MessageController.php" enctype="multipart/form-data">
             <fieldset class="form-group">
                 <label for="username">Title:</label>
                 <input id="title" name="title" type="text" placeholder="" class="form-control">
@@ -68,7 +68,7 @@
             </fieldset>
             <fieldset class="form-group">
                 <label for="username">Attachment:</label>
-                <input id="file" name="user_file" type="file" placeholder="" class="form-control">
+                <input id="file" name="attachment" type="file" placeholder="" class="form-control">
             </fieldset>
             <br>
             <div class="form-actions">
